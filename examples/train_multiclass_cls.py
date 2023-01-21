@@ -1,15 +1,3 @@
-# ML Tools
-Common ML Tools for Training Deep Learning Model (will updated later xD)
-
-## Installation
-```bash
-pip3 install . -r requirements.txt
-```
-
-## How to Use
-
-You can follow the example below for create trainer.
-```python
 import os
 from comet_ml import Artifact, Experiment
 import torch
@@ -123,4 +111,3 @@ if __name__ == "__main__":
     artifact.add(final_optimizer_path)
     artifact.add(model_cfg_path)
     logger.log_artifact(artifact=artifact)
-```
